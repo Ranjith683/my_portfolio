@@ -40,7 +40,7 @@ export default function Hero() {
         className="
       absolute bottom-8 sm:bottom-10
           left-1/2 -translate-x-1/2
-          px-6 sm:px-8 py-3 sm:py-4
+          px-2 sm:px-8 py-3 sm:py-4
           rounded-full font-semibold text-white
           bg-gradient-to-r from-purple-600 to-indigo-500
           shadow-lg shadow-purple-500/40

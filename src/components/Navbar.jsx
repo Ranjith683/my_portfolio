@@ -9,7 +9,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -50 }}
       animate={{ y: 0 }}
-      className="fixed top-0 w-full bg-white shadow z-50"
+      className="fixed top-0 w-full bg-white shadow z-50 rounded-3xl"
     >
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* ================= LEFT (DESKTOP NAME) ================= */}
