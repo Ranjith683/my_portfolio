@@ -40,7 +40,7 @@ export default function Hero() {
         className="
       absolute bottom-8 sm:bottom-10
           left-1/2 -translate-x-1/2
-          px-2 sm:px-8 py-3 sm:py-4
+          px-8 sm:px-8 py-3 sm:py-4
           rounded-full font-semibold text-white
           bg-gradient-to-r from-purple-600 to-indigo-500
           shadow-lg shadow-purple-500/40
@@ -59,7 +59,7 @@ export default function Hero() {
           src="https://img.freepik.com/premium-vector/gamer-man_961307-25037.jpg?semt=ais_hybrid&w=740&q=80"
           alt="Ranjith Kumar"
           className="w-52 h-52
-            sm:w-64 sm:h-64
+            sm:w-64 sm:h-34
             md:w-80 md:h-80
             lg:w-96 lg:h-96
             rounded-full
