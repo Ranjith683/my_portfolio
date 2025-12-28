@@ -1,250 +1,125 @@
 import { useState } from "react";
 
+const experiences = [
+  {
+    id: 1,
+    company: "Quartr Design Solutions",
+    role: "Web Developer | Apr 2025 – Dec 2025",
+    points: [
+      "Shopify OTP authentication & GraphQL APIs",
+      "Webflow CMS & animations",
+      "Figma to pixel-perfect UI",
+    ],
+  },
+  {
+    id: 2,
+    company: "SkyApps Software",
+    role: "Software Trainee | Aug 2024 – Sep 2024",
+    points: [
+      "Software development lifecycle (SDLC – basics)",
+      "Code collaboration & team workflows",
+      "Bug fixing & feature support",
+      "Learning-focused development environment",
+    ],
+  },
+  {
+    id: 3,
+    company: "Humcode Technologies",
+    role: "Front-End Web Developer | Jul 2023 – Dec 2023",
+    points: [
+      "HTML5, CSS3, JavaScript & UI improvements",
+      "Transition from non-technical to technical role",
+      "Responsive layouts and bug fixing",
+    ],
+  },
+  {
+    id: 4,
+    company: "Saratha Feeds & Foods",
+    role: "Junior Analyst | Jul 2021 – Jun 2023",
+    points: [
+      "Sales, purchase & inventory analysis",
+      "MS Excel (VLOOKUP, Pivot, formulas), Tally Prime",
+      "Data-driven decision support",
+    ],
+  },
+];
+
 export default function Experience() {
-  const [open1, setOpen1] = useState(false);
-  const [open2, setOpen2] = useState(false);
-  const [open3, setOpen3] = useState(false);
-  const [open4, setOpen4] = useState(false);
+  const [openId, setOpenId] = useState(null);
+
+  const toggleCard = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
+
   return (
-    <section id="experience" className="bg-gray-100 py-10">
-      <div className="max-w-5xl mx-auto text-left">
+    <section id="experience" className="bg-gray-100 py-14">
+      <div className="max-w-5xl mx-auto px-4">
+        {/* Heading */}
         <h2
-          className="relative inline-block text-3xl font-bold mb-10 
-  after:content-[''] after:absolute after:left-0 after:-bottom-2
-  after:w-16 after:h-1 after:bg-gradient-to-r after:from-purple-600 after:to-indigo-500
-  after:rounded-full after:transition-all after:duration-300
-  hover:after:w-full hover:after:shadow-lg hover:after:shadow-purple-500/50"
+          className="relative inline-block text-2xl sm:text-3xl font-bold mb-10
+          after:content-[''] after:absolute after:left-0 after:-bottom-2
+          after:w-14 after:h-1 after:bg-gradient-to-r
+          after:from-purple-600 after:to-indigo-500 after:rounded-full"
         >
           Experience
         </h2>
 
-        <div className="grid grid-cols-2 gap-6 max-w-5xl mx-auto">
-          <div
-            className={`relative p-6 rounded shadow group h-fit transition-all duration-300
-    ${
-      open1 === 1
-        ? "bg-gradient-to-r from-purple-600 to-indigo-600"
-        : "bg-white"
-    }
-  `}
-            onMouseEnter={() => setOpen1(1)}
-            onMouseLeave={() => setOpen1(null)}
-          >
-            <div className="relative cursor-pointer">
-              <div className="flex justify-between items-center">
-                <div>
-                  <h3
-                    className={`font-bold transition-colors duration-300
-            ${open1 === 1 ? "text-white" : "text-gray-900"}
-          `}
-                  >
-                    Quartr Design Solutions
-                  </h3>
-                  <p
-                    className={`text-sm transition-colors duration-300 ${
-                      open1 === 1 ? "text-gray-200" : "text-gray-500"
-                    }
-                  }`}
-                  >
-                    Web Developer | Apr 2025 – Dec 2025
-                  </p>
-                </div>
-                <span
-                  className={`transform transition-all duration-300 text-xl opacity-100 group-hover:opacity-100 ${
-                    open1 === 1 ? "rotate-180 text-white" : "text-gray-700"
-                  }`}
-                >
-                  ▼
-                </span>
-              </div>
-              {open1 === 1 && (
-                <ul
-                  className={`list-disc ml-6 mt-4 transition-all duration-300 ${
-                    open1 === 1 ? "text-white" : "text-gray-1000"
-                  }`}
-                >
-                  <li>Shopify OTP authentication & GraphQL APIs</li>
-                  <li>Webflow CMS & animations</li>
-                  <li>Figma to pixel-perfect UI</li>
-                </ul>
-              )}
-            </div>
-          </div>
+        {/* Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {experiences.map((exp) => {
+            const isOpen = openId === exp.id;
 
-          <div
-            className={`relative p-6 rounded shadow group h-fit transition-all duration-300
-    ${
-      open2 === 2
-        ? "bg-gradient-to-r from-purple-600 to-indigo-600"
-        : "bg-white"
-    }
-  `}
-            onMouseEnter={() => setOpen2(2)}
-            onMouseLeave={() => setOpen2(null)}
-          >
-            <div className="relative cursor-pointer">
-              <div className="flex justify-between items-center">
-                <div>
-                  <h3
-                    className={`font-bold transition-colors duration-300
-            ${open2 === 2 ? "text-white" : "text-gray-900"}
-          `}
-                  >
-                    SkyApps Software
-                  </h3>
-                  <p
-                    className={`text-sm transition-colors duration-300 ${
-                      open2 === 2 ? "text-gray-200" : "text-gray-500"
-                    }
-                  }`}
-                  >
-                    Software Trainee | Aug 2024 – Sep 2024
-                  </p>
-                </div>
-                <span
-                  className={`transform transition-all duration-300 text-xl opacity-100 group-hover:opacity-100 ${
-                    open2 === 2 ? "rotate-180 text-white" : "text-gray-700"
-                  }`}
-                >
-                  ▼
-                </span>
-              </div>
-              {open2 === 2 && (
-                <ul
-                  className={`list-disc ml-6 mt-4 transition-all duration-300 ${
-                    open2 === 2 ? "text-white" : "text-gray-1000"
-                  }`}
-                >
-                  <li>Software development lifecycle (SDLC – basics)</li>
-                  <li>Code collaboration & team workflows</li>
-                  <li>Bug fixing & feature support</li>
-                  <li>Learning-focused development environment</li>
-                </ul>
-              )}
-            </div>
-          </div>
+            return (
+              <div
+                key={exp.id}
+                className={`p-6 rounded shadow transition-all duration-300 cursor-pointer
+                ${
+                  isOpen
+                    ? "bg-gradient-to-r from-purple-600 to-indigo-600"
+                    : "bg-white"
+                }`}
+                onClick={() => toggleCard(exp.id)}
+                onMouseEnter={() =>
+                  window.innerWidth >= 1024 && setOpenId(exp.id)
+                }
+                onMouseLeave={() =>
+                  window.innerWidth >= 1024 && setOpenId(null)
+                }
+              >
+                <div className="flex justify-between items-center">
+                  <div>
+                    <h3
+                      className={`font-bold transition-colors
+                      ${isOpen ? "text-white" : "text-gray-900"}`}
+                    >
+                      {exp.company}
+                    </h3>
+                    <p
+                      className={`text-sm transition-colors
+                      ${isOpen ? "text-gray-200" : "text-gray-500"}`}
+                    >
+                      {exp.role}
+                    </p>
+                  </div>
 
-          <div
-            className={`relative p-6 rounded shadow group h-fit transition-all duration-300
-    ${
-      open3 === 3
-        ? "bg-gradient-to-r from-purple-600 to-indigo-600"
-        : "bg-white"
-    }
-  `}
-            onMouseEnter={() => setOpen3(3)}
-            onMouseLeave={() => setOpen3(null)}
-          >
-            <div className="relative cursor-pointer">
-              <div className="flex justify-between items-center">
-                <div>
-                  <h3
-                    className={`font-bold transition-colors duration-300
-            ${open3 === 3 ? "text-white" : "text-gray-900"}
-          `}
+                  <span
+                    className={`text-xl transition-transform duration-300
+                    ${isOpen ? "rotate-180 text-white" : "text-gray-700"}`}
                   >
-                    Humcode Technologies
-                  </h3>
-                  <p
-                    className={`text-sm transition-colors duration-300 ${
-                      open3 === 3 ? "text-gray-200" : "text-gray-500"
-                    }
-                  }`}
-                  >
-                    Front-End Web-Developer | Jul 2023 – Dec 2023
-                  </p>
+                    ▼
+                  </span>
                 </div>
-                <span
-                  className={`transform transition-all duration-300 text-xl opacity-100 group-hover:opacity-100 ${
-                    open3 === 3 ? "rotate-180 text-white" : "text-gray-700"
-                  }`}
-                >
-                  ▼
-                </span>
-              </div>
-              {open3 === 3 && (
-                <ul
-                  className={`list-disc ml-6 mt-4 transition-all duration-300 ${
-                    open3 === 3 ? "text-white" : "text-gray-1000"
-                  }`}
-                >
-                  <li>
-                    HTML5, CSS3, JavaScript and UI bug fixing & improvements
-                  </li>
-                  <li>
-                    Transition from non-technical to technical role and Team
-                    collaboration & learning mindset
-                  </li>
-                  <li>
-                    Front-end development, HTML, CSS, JavaScript, UI design,
-                    responsive layout, bug fixing, web developer, learner,
-                    mentor-guided development
-                  </li>
-                </ul>
-              )}
-            </div>
-          </div>
 
-          <div
-            className={`relative p-6 rounded shadow group h-fit transition-all duration-300
-    ${
-      open4 === 4
-        ? "bg-gradient-to-r from-purple-600 to-indigo-600"
-        : "bg-white"
-    }
-  `}
-            onMouseEnter={() => setOpen4(4)}
-            onMouseLeave={() => setOpen4(null)}
-          >
-            <div className="relative cursor-pointer">
-              <div className="flex justify-between items-center">
-                <div>
-                  <h3
-                    className={`font-bold transition-colors duration-300
-            ${open4 === 4 ? "text-white" : "text-gray-900"}
-          `}
-                  >
-                    Saratha Feeds&Foods
-                  </h3>
-                  <p
-                    className={`text-sm transition-colors duration-300 ${
-                      open4 === 4 ? "text-gray-200" : "text-gray-500"
-                    }
-                  }`}
-                  >
-                    Junior Analyst | Jul 2021 – Jun 2023
-                  </p>
-                </div>
-                <span
-                  className={`transform transition-all duration-300 text-xl opacity-100 group-hover:opacity-100 ${
-                    open4 === 4 ? "rotate-180 text-white" : "text-gray-700"
-                  }`}
-                >
-                  ▼
-                </span>
+                {isOpen && (
+                  <ul className="list-disc ml-6 mt-4 text-white space-y-1">
+                    {exp.points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
-              {open4 === 4 && (
-                <ul
-                  className={`list-disc ml-6 mt-4 transition-all duration-300 ${
-                    open4 === 4 ? "text-white" : "text-gray-1000"
-                  }`}
-                >
-                  <li>
-                    Data analysis & reporting and Sales, purchase & inventory
-                    analysis
-                  </li>
-                  <li>
-                    MS Excel (VLOOKUP, Pivot Tables, formulas) Tally Prime
-                    (basic accounting & entries)
-                  </li>
-                  <li>
-                    Data-driven decision support and Accuracy, attention to
-                    detail & documentation
-                  </li>
-                </ul>
-              )}
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
