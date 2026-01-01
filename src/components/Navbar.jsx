@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 export default function Navbar() {
-  const name = "Ranjith Kumar";
+  const name = "Ranjith kumar";
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -68,7 +68,7 @@ export default function Navbar() {
                   key={item}
                   href={`#${item}`}
                   onClick={() => setMenuOpen(false)}
-                  className="w-full text-center py-2 hover:bg-gradient-to-r hover:from-violet-500 hover:to-purple-600 hover:text-white transition"
+                  className="block w-30 text-center py-3 rounded-lg bg-gradient-to-r from-violet-500 to-purple-600 text-white font-medium transition-all duration-300"
                 >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </a>

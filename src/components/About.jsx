@@ -24,7 +24,7 @@ export default function About() {
           </p>
 
           <p className="text-sm sm:text-base leading-relaxed">
-            My skill set includes React.js, Node.js, MongoDB, and modern UI
+            My skill set includes React.js, Node.js, MongoDB, WebFlow Tool and modern UI
             frameworks, with a strong focus on clean design, scalability, and
             performance optimization. I enjoy collaborating with teams,
             improving application efficiency, and supporting production-ready

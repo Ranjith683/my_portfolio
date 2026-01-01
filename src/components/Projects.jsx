@@ -117,7 +117,7 @@ export default function Projects() {
             <div
               className="flex gap-8 transition-transform duration-500 ease-in-out"
               style={{
-                transform: `translateX(-${currentIndex * 33.333}%)`,
+                transform: `translateX(-${currentIndex * 40}%)`,
               }}
             >
               {projects.map((p) => (

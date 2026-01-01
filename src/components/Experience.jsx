@@ -4,44 +4,59 @@ const experiences = [
   {
     id: 1,
     company: "Quartr Design Solutions",
-    role: "Web Developer | Apr 2025 – Dec 2025",
+    role: "Front End Developer | Apr 2025 – Dec 2025",
     points: [
-      "Shopify OTP authentication & GraphQL APIs",
-      "Webflow CMS & animations",
-      "Figma to pixel-perfect UI",
+      "Implemented OTP-based authentication and integrated GraphQL APIs in Shopify projects",
+      "Built and managed websites using Webflow CMS, including animations and dynamic content",
+      "Converted Figma designs into pixel-perfect, responsive user interfaces",
+      "Skills : Shopify-PolarisUI-API's-Webflow(CMS & Animations)",
     ],
   },
   {
     id: 2,
-    company: "SkyApps Software",
-    role: "Software Trainee | Aug 2024 – Sep 2024",
+    company: "Freelancer-WebFlow",
+    role: "Web Developer | Nov 2024 – Apr 2025",
     points: [
-      "Software development lifecycle (SDLC – basics)",
-      "Code collaboration & team workflows",
-      "Bug fixing & feature support",
-      "Learning-focused development environment",
+      "Website Developer delivering responsive and user-focused web solutions",
+      "Building scalable web applications using Webflow",
+      "Developing Full stack Web Applications using React.js/Node.js(Express)/MangoDB ",
+      " Leveraging AI Tools like Cursor Copilot for Smarter Development",
+      "Skills : React.js-Node(Express.js)-MangoDB-WebFlow Tool",
     ],
   },
   {
     id: 3,
-    company: "Humcode Technologies",
-    role: "Front-End Web Developer | Jul 2023 – Dec 2023",
+    company: "SkyApps Software",
+    role: "Software Developer Intern | Aug 2024 – Sep 2024",
     points: [
-      "HTML5, CSS3, JavaScript & UI improvements",
-      "Transition from non-technical to technical role",
-      "Responsive layouts and bug fixing",
+      "Software development lifecycle (SDLC – basics)",
+      "Code collaboration & team workflows",
+      "Bug fixing & feature support",
+      "Learned Python programming fundamentals and applied them in basic application development tasks",
+      "Skills : SDLC-Python-GitHub",
     ],
   },
   {
     id: 4,
-    company: "Saratha Feeds & Foods",
-    role: "Junior Analyst | Jul 2021 – Jun 2023",
+    company: "Humcode Technologies",
+    role: "FrontEnd Developer-Trainee | Jul 2023 – Aug 2024",
     points: [
-      "Sales, purchase & inventory analysis",
-      "MS Excel (VLOOKUP, Pivot, formulas), Tally Prime",
-      "Data-driven decision support",
+      "Learned and applied HTML5, CSS3, JavaScript, and modern layout techniques (Flexbox, Grid) to build responsive user interfaces",
+      "Actively learned Wix Editor customization, responsive design principles, and basic website optimization techniques",
+      "Responsive layouts and bug fixing",
+      "Skills : Html-Css-JavaScript-Wix Website Builder",
     ],
   },
+  // {
+  //   id: 4,
+  //   company: "Saratha Feeds & Foods",
+  //   role: "Junior Analyst | Jul 2021 – Jun 2023",
+  //   points: [
+  //     "Sales, purchase & inventory analysis",
+  //     "MS Excel (VLOOKUP, Pivot, formulas), Tally Prime",
+  //     "Data-driven decision support",
+  //   ],
+  // },
 ];
 
 export default function Experience() {
@@ -65,7 +80,7 @@ export default function Experience() {
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           {experiences.map((exp) => {
             const isOpen = openId === exp.id;
 

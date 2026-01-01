@@ -59,7 +59,7 @@ export default function Hero() {
           src="https://img.freepik.com/premium-vector/gamer-man_961307-25037.jpg?semt=ais_hybrid&w=740&q=80"
           alt="Ranjith Kumar"
           className="w-52 h-52
-            sm:w-64 sm:h-34
+            sm:w-64 sm:h-64
             md:w-80 md:h-80
             lg:w-96 lg:h-96
             rounded-full
