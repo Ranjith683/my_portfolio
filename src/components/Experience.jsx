@@ -9,7 +9,7 @@ const experiences = [
       "Implemented OTP-based authentication and integrated GraphQL APIs in Shopify projects",
       "Built and managed websites using Webflow CMS, including animations and dynamic content",
       "Converted Figma designs into pixel-perfect, responsive user interfaces",
-      "Skills : Shopify-PolarisUI-API's-Webflow(CMS & Animations)",
+      "Skills : Shopify-PolarisUI-API's) AI-Tools : [Cursor,Copiolet,Replit,BoltAI]",
     ],
   },
   {
