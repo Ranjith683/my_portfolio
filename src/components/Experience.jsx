@@ -39,7 +39,7 @@ const experiences = [
   {
     id: 4,
     company: "Humcode Technologies",
-    role: "FrontEnd Developer-Trainee | Jul 2023 – Aug 2024",
+    role: "Web Developer-Trainee | Jul 2023 – Aug 2024",
     points: [
       "Learned and applied HTML5, CSS3, JavaScript, and modern layout techniques (Flexbox, Grid) to build responsive user interfaces",
       "Actively learned Wix Editor customization, responsive design principles, and basic website optimization techniques",
