@@ -1,9 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { FiDownload } from "react-icons/fi";
 
 export default function Navbar() {
   const name = "Ranjith kumar";
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const resumeLink =
+    "https://drive.google.com/uc?export=download&id=1-FdsLyCIeGNJl8bFpeR_JVD4duUaabNr";
 
   return (
     <motion.nav
@@ -32,7 +36,7 @@ export default function Navbar() {
         </h1>
 
         {/* ================= DESKTOP MENU ================= */}
-        <div className="hidden lg:flex space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           {["about", "experience", "projects", "contact"].map((item) => (
             <a
               key={item}
@@ -42,6 +46,24 @@ export default function Navbar() {
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </a>
           ))}
+
+          {/* ===== RESUME DOWNLOAD (DESKTOP) ===== */}
+          <a
+            href={resumeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            title="Download Resume"
+            className="
+              p-3 rounded-full
+              bg-gradient-to-r from-pink-600 to-pink-600
+              text-white
+              shadow-md
+              hover:scale-110 transition-all
+            "
+          >
+            <FiDownload size={20} />
+          </a>
         </div>
 
         {/* ================= MOBILE MENU ICON ================= */}
@@ -68,11 +90,32 @@ export default function Navbar() {
                   key={item}
                   href={`#${item}`}
                   onClick={() => setMenuOpen(false)}
-                  className="block w-30 text-center py-3 rounded-lg bg-gradient-to-r from-violet-500 to-purple-600 text-white font-medium transition-all duration-300"
+                  className="block w-32 text-center py-3 rounded-lg
+                    bg-gradient-to-r from-violet-500 to-purple-600
+                    text-white font-medium transition-all"
                 >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </a>
               ))}
+
+              {/* ===== RESUME DOWNLOAD (MOBILE) ===== */}
+              <a
+                href={resumeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                onClick={() => setMenuOpen(false)}
+                title="Download Resume"
+                className="
+                  p-4 rounded-full
+                  bg-gradient-to-r from-pink-600 to-pink-600
+                  text-white
+                  shadow-md
+                  hover:scale-110 transition-all
+                "
+              >
+                <FiDownload size={22} />
+              </a>
             </div>
           </motion.div>
         )}
