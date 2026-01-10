@@ -12,7 +12,7 @@ const projects = [
     image: otp,
     tech: "React, Next.js, GraphQL, Prisma",
     desc: "Secure OTP authentication for international clients.",
-    liveUrl: "https://github.com/Ranjith683",
+    liveUrl: "https://zoketo-otp-superadmin.onrender.com/login",
   },
   {
     title: "AI Audio Journaling - AI-Thon",
