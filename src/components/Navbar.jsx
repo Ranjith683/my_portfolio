@@ -7,7 +7,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const resumeLink =
-    "https://drive.google.com/uc?export=download&id=1-FdsLyCIeGNJl8bFpeR_JVD4duUaabNr";
+    "https://drive.google.com/file/d/1AbMzhwKfe4DX_UOOTQj_hTBN1wxFQIK4/view?usp=sharing";
 
   return (
     <motion.nav

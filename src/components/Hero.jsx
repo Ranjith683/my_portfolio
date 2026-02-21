@@ -32,7 +32,7 @@ export default function Hero() {
         </p>
       </motion.div>
       <motion.a
-        href="https://drive.google.com/file/d/1-FdsLyCIeGNJl8bFpeR_JVD4duUaabNr/view?usp=sharing"
+        href="https://drive.google.com/file/d/1AbMzhwKfe4DX_UOOTQj_hTBN1wxFQIK4/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, y: 30 }}
