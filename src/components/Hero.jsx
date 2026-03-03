@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Snowfall from "react-snowfall";
 
 export default function Hero() {
   return (
@@ -11,6 +12,16 @@ export default function Hero() {
         px-6 md:px-10 lg:px-20
         gap-10"
     >
+      <Snowfall
+        color="#a7a0a5"
+        snowflakeCount={100}
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          zIndex: 1,
+        }}
+      />
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
