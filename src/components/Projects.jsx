@@ -4,6 +4,7 @@ import narkol from "../assets/narkol.png";
 import aakruthaa from "../assets/aakruthaa.png";
 import ecommerce from "../assets/ecommerce.png";
 import properties from "../assets/properties.png";
+import craftedpixel from "../assets/craftedpixel.png";
 import { useState } from "react";
 
 const projects = [
@@ -21,6 +22,22 @@ const projects = [
     desc: "Smart voice journaling with noise removal and emotion-aware AI insights.",
     liveUrl: "https://github.com/Ranjith683",
   },
+  {
+    title: "Crafted Pixel Agency",
+    image: craftedpixel,
+    tech: "Reactjs, TailwindCss, ReactFrameWorks",
+    desc: "CraftedPixel is a full-service design agency building brands, digital products, and experiences that leave a lasting mark.",
+    liveUrl: "https://craft-pixel-agency.vercel.app/",
+  },
+
+  {
+    title: "Cr",
+    image: otp,
+    tech: "React, Next.js, GraphQL, Prisma",
+    desc: "Secure OTP authentication for international clients.",
+    liveUrl: "https://zoketo-otp-superadmin.onrender.com/login",
+  },
+
   {
     title: "Narkol Ventures Freelance",
     image: narkol,
