@@ -29,15 +29,6 @@ const projects = [
     desc: "CraftedPixel is a full-service design agency building brands, digital products, and experiences that leave a lasting mark.",
     liveUrl: "https://craft-pixel-agency.vercel.app/",
   },
-
-  {
-    title: "Cr",
-    image: otp,
-    tech: "React, Next.js, GraphQL, Prisma",
-    desc: "Secure OTP authentication for international clients.",
-    liveUrl: "https://zoketo-otp-superadmin.onrender.com/login",
-  },
-
   {
     title: "Narkol Ventures Freelance",
     image: narkol,
