@@ -1,3 +1,4 @@
+import avb from "../assets/avb.png";
 import otp from "../assets/otp-project.png";
 import ai from "../assets/ai-journal.png";
 import narkol from "../assets/narkol.png";
@@ -8,6 +9,13 @@ import craftedpixel from "../assets/craftedpixel.png";
 import { useState } from "react";
 
 const projects = [
+  {
+    title: "AVB ManPower Solutions",
+    image: avb,
+    tech: "React, HTML, CSS, SQL, auth",
+    desc: "Delivering Skilled Talent , Driving Business Success.",
+    liveUrl: "https://avb-consultancy.vercel.app/",
+  },
   {
     title: "OTP Integration – Shopify",
     image: otp,
