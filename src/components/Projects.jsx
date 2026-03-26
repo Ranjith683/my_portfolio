@@ -15,6 +15,7 @@ const projects = [
     tech: "React, HTML, CSS, SQL, auth",
     desc: "Delivering Skilled Talent , Driving Business Success.",
     liveUrl: "https://avb-consultancy.vercel.app/",
+    githubUrl: "https://github.com/Ranjith683/AVB-Manpower-Solutions.git",
   },
   {
     title: "OTP Integration – Shopify",
@@ -22,6 +23,7 @@ const projects = [
     tech: "React, Next.js, GraphQL, Prisma",
     desc: "Secure OTP authentication for international clients.",
     liveUrl: "https://zoketo-otp-superadmin.onrender.com/login",
+    githubUrl: "https://www.shopify.com/in/partners",
   },
   {
     title: "AI Audio Journaling - AI-Thon",
@@ -29,13 +31,15 @@ const projects = [
     tech: "AI Tools, Replit, Bolt AI",
     desc: "Smart voice journaling with noise removal and emotion-aware AI insights.",
     liveUrl: "https://github.com/Ranjith683",
+    githubUrl: "https://github.com/Ranjith683/AI-Thon-ArreVoice.git",
   },
   {
     title: "Crafted Pixel Agency",
     image: craftedpixel,
     tech: "Reactjs, TailwindCss, ReactFrameWorks",
-    desc: "CraftedPixel is a full-service design agency building brands, digital products, and experiences that leave a lasting mark.",
+    desc: "Building brands, digital products, and experiences that leave a lasting mark.",
     liveUrl: "https://craft-pixel-agency.vercel.app/",
+    githubUrl: "https://github.com/Ranjith683/CraftPixel_Agency_Task.git",
   },
   {
     title: "Narkol Ventures Freelance",
@@ -43,6 +47,7 @@ const projects = [
     tech: "React, HTML, CSS, SQL",
     desc: "Business website with performance optimization.",
     liveUrl: "https://preview--prd-quest-web.lovable.app/",
+    githubUrl: "https://github.com/Ranjith683/prd-quest-web.git",
   },
   {
     title: "Aakruthaa Consultancy Freelance",
@@ -50,6 +55,7 @@ const projects = [
     tech: "HTML, CSS, JavaScript",
     desc: "Driving business growth through scalable digital solutions.",
     liveUrl: "https://aakruthaa.vercel.app/",
+    githubUrl: "https://github.com/Ranjith683/aakruthaa.git",
   },
   {
     title: "Trend-Hub E-commerce Website",
@@ -57,6 +63,7 @@ const projects = [
     tech: "HTML, CSS, JavaScript",
     desc: "Designed and developed as a learning e-commerce project.",
     liveUrl: "https://e-commerce-mmix.vercel.app/",
+    githubUrl: "https://github.com/Ranjith683/E-commerce.git",
   },
   {
     title: "Rohini Properties Webflow Project",
@@ -64,6 +71,7 @@ const projects = [
     tech: "Webflow, JavaScript",
     desc: "Smart property listings powered by Webflow CMS.",
     liveUrl: "https://demoproperties.webflow.io/",
+    githubUrl: "https://webflow.com/login",
   },
 ];
 
@@ -89,10 +97,8 @@ export default function Projects() {
         {/* ================= MOBILE & TABLET VIEW ================= */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:hidden">
           {projects.map((p) => (
-            <a
+            <div
               key={p.title}
-              href={p.liveUrl}
-              target="_blank"
               className="shadow rounded overflow-hidden hover:scale-105 transition"
             >
               <img
@@ -100,12 +106,32 @@ export default function Projects() {
                 alt={p.title}
                 className="w-full h-48 object-cover"
               />
+
               <div className="p-4">
                 <h3 className="font-bold">{p.title}</h3>
                 <p className="text-sm text-gray-500">{p.tech}</p>
                 <p className="mt-2">{p.desc}</p>
+
+                {/* BUTTON */}
+                <div className="mt-4 flex gap-3">
+                  <a
+                    href={p.liveUrl}
+                    target="_blank"
+                    className="flex-1 text-center px-3 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-100"
+                  >
+                    Live
+                  </a>
+
+                  <a
+                    href={p.githubUrl}
+                    target="_blank"
+                    className="flex-1 text-center px-3 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-100"
+                  >
+                    Source Code
+                  </a>
+                </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
 
@@ -137,10 +163,8 @@ export default function Projects() {
               }}
             >
               {projects.map((p) => (
-                <a
+                <div
                   key={p.title}
-                  href={p.liveUrl}
-                  target="_blank"
                   className="min-w-[33.333%] shadow rounded overflow-hidden hover:scale-105 transition"
                 >
                   <img
@@ -148,12 +172,34 @@ export default function Projects() {
                     alt={p.title}
                     className="w-full h-48 object-cover"
                   />
+
                   <div className="p-4">
                     <h3 className="font-bold">{p.title}</h3>
                     <p className="text-sm text-gray-500">{p.tech}</p>
                     <p className="mt-2">{p.desc}</p>
+
+                    {/* BUTTON */}
+                    <div className="mt-4 flex gap-3">
+                      <a
+                        href={p.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center px-3 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-100 transition"
+                      >
+                        Live
+                      </a>
+
+                      <a
+                        href={p.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center px-3 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-100 transition"
+                      >
+                        Source Code
+                      </a>
+                    </div>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>
