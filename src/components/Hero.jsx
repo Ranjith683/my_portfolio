@@ -34,16 +34,16 @@ export default function Hero() {
           Ranjith Kumar
         </h1>
         <p className="mt-6 text-base sm:text-lg lg:text-xl">
-          Passionate Frontend / Full Stack Developer with 2 year of experience
+          Passionate Frontend / Full Stack Developer with 3 year of experience
           in crafting responsive websites and transforming ideas into
           functional, elegant digital experiences.
         </p>
         <p className="mt-3 text-gray-400 text-sm sm:text-base">
-          Totally 3 Years Experience | Coimbatore
+          Totally 5 Years Experience | Coimbatore
         </p>
       </motion.div>
       <motion.a
-        href="https://drive.google.com/file/d/1v8ki187CphuEJhNeaDcZidknwl7nfJ1q/view?usp=sharing"
+        href="https://drive.google.com/file/d/1ULVikIZ5vA78N3KG1Bs2uyLShu-jIu3j/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, y: 30 }}

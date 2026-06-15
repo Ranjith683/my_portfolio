@@ -1,62 +1,76 @@
 import { useState } from "react";
 
 const experiences = [
-  {
-    id: 1,
-    company: "Quartr Design Solutions",
-    role: "Front End Developer | Apr 2025 – Dec 2025",
-    points: [
-      "Implemented OTP-based authentication and integrated GraphQL APIs in Shopify projects",
-      "Built and managed websites using Webflow CMS, including animations and dynamic content",
-      "Converted Figma designs into pixel-perfect, responsive user interfaces",
-      "Skills : Shopify-PolarisUI-API's) AI-Tools : [Cursor,Copiolet,Replit,BoltAI]",
-    ],
-  },
-  {
-    id: 2,
-    company: "Freelancer-WebFlow",
-    role: "Web Developer | Nov 2024 – Apr 2025",
-    points: [
-      "Website Developer delivering responsive and user-focused web solutions",
-      "Building scalable web applications using Webflow",
-      "Developing Full stack Web Applications using React.js/Node.js(Express)/MangoDB ",
-      " Leveraging AI Tools like Cursor Copilot for Smarter Development",
-      "Skills : React.js-Node(Express.js)-MangoDB-WebFlow Tool",
-    ],
-  },
-  {
-    id: 3,
-    company: "SkyApps Software",
-    role: "Software Developer Intern | Aug 2024 – Sep 2024",
-    points: [
-      "Software development lifecycle (SDLC – basics)",
-      "Code collaboration & team workflows",
-      "Bug fixing & feature support",
-      "Learned Python programming fundamentals and applied them in basic application development tasks",
-      "Skills : SDLC-Python-GitHub",
-    ],
-  },
-  {
-    id: 4,
-    company: "Humcode Technologies",
-    role: "Web Developer-Trainee | Jul 2023 – Dec 2023",
-    points: [
-      "Learned and applied HTML5, CSS3, JavaScript, and modern layout techniques (Flexbox, Grid) to build responsive user interfaces",
-      "Actively learned Wix Editor customization, responsive design principles, and basic website optimization techniques",
-      "Responsive layouts and bug fixing",
-      "Skills : Html-Css-JavaScript-Wix Website Builder",
-    ],
-  },
   // {
-  //   id: 4,
-  //   company: "Saratha Feeds & Foods",
-  //   role: "Junior Analyst | Jul 2021 – Jun 2023",
+  //   id: 1,
+  //   company: "Quartr Design Solutions",
+  //   role: "Front End Developer | Apr 2025 – Dec 2025",
   //   points: [
-  //     "Sales, purchase & inventory analysis",
-  //     "MS Excel (VLOOKUP, Pivot, formulas), Tally Prime",
-  //     "Data-driven decision support",
+  //     "Implemented OTP-based authentication and integrated GraphQL APIs in Shopify projects",
+  //     "Built and managed websites using Webflow CMS, including animations and dynamic content",
+  //     "Converted Figma designs into pixel-perfect, responsive user interfaces",
+  //     "Skills : Shopify-PolarisUI-API's) AI-Tools : [Cursor,Copiolet,Replit,BoltAI]",
   //   ],
   // },
+  // {
+  //   id: 2,
+  //   company: "Freelancer-WebFlow",
+  //   role: "Web Developer | Nov 2024 – Apr 2025",
+  //   points: [
+  //     "Website Developer delivering responsive and user-focused web solutions",
+  //     "Building scalable web applications using Webflow",
+  //     "Developing Full stack Web Applications using React.js/Node.js(Express)/MangoDB ",
+  //     " Leveraging AI Tools like Cursor Copilot for Smarter Development",
+  //     "Skills : React.js-Node(Express.js)-MangoDB-WebFlow Tool",
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   company: "SkyApps Software",
+  //   role: "Software Developer Intern | Aug 2024 – Sep 2024",
+  //   points: [
+  //     "Software development lifecycle (SDLC – basics)",
+  //     "Code collaboration & team workflows",
+  //     "Bug fixing & feature support",
+  //     "Learned Python programming fundamentals and applied them in basic application development tasks",
+  //     "Skills : SDLC-Python-GitHub",
+  //   ],
+  // },
+  // {
+  //   id: 4,
+  //   company: "Humcode Technologies",
+  //   role: "Web Developer-Trainee | Jul 2023 – Dec 2023",
+  //   points: [
+  //     "Learned and applied HTML5, CSS3, JavaScript, and modern layout techniques (Flexbox, Grid) to build responsive user interfaces",
+  //     "Actively learned Wix Editor customization, responsive design principles, and basic website optimization techniques",
+  //     "Responsive layouts and bug fixing",
+  //     "Skills : Html-Css-JavaScript-Wix Website Builder",
+  //   ],
+  // },
+  {
+    id: 5,
+    company: "AVB ManPower Consultancy– Erode",
+    role: "MERN Coordinator | Aug 2023 – Present",
+    points: [
+      "Developed andmaintained responsive web applications using React.js, Node.js, JavaScript, and MongoDB.",
+      "Implemented website modifications, bug fixes, and feature enhancements based on client requirements.",
+      "Built user-friendly interfaces and integrated REST APIs to improve application functionality and performance.",
+      "Managed website content, job postings, application data, deployment, testing, and troubleshooting activities.",
+      "Collaborated with clients and cross-functional teams while utilizing AI-powered development tools to improve productivity and deliver quality solutions.",
+    ],
+  },
+  {
+    id: 6,
+    company: "Saratha Feeds & Foods- Coimbatore",
+    role: "Account Executive | Jul 2021 – Jul 2023",
+    points: [
+      "ManagedAccountsPayableandAccountsReceivable activities, ensuring accurate financial transactions and timely payments.",
+      "Prepared and maintained GST records, tax-related documentation, and statutory compliance reports.",
+      "Performed bank reconciliations and verified financial records to ensure data accuracy and consistency.",
+      "Generated MIS reports and analyzed financial data to support management decision-making and business operations.",
+      "Utilized Tally Prime and Microsoft Excel for accounting, reporting, data management, and process optimization.",
+    ],
+  },
 ];
 
 export default function Experience() {
